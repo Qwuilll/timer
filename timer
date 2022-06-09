@@ -45,6 +45,4 @@ ab.Font=Enum.Font.ArialBold
 ab.TextColor3=Color3.new(1,1,1)
 ab.TextSize=20
 
-local bb=game:service'VirtualUser'
-
 
