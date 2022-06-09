@@ -45,4 +45,10 @@ ab.Font=Enum.Font.ArialBold
 ab.TextColor3=Color3.new(1,1,1)
 ab.TextSize=20
 
+while wait(1) do
+ab.Text = "hi"
+wait(1)
+ab.Text = "bye"
+end
+
 
