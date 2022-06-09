@@ -48,13 +48,15 @@ ab.TextSize=20
 local bb=game:service'VirtualUser'
 
 while wait(1) do
-z+1
-if z = 60 then
-  z = 0 and y = y+1
+  z+1
+  if z = 60 then  
+    z = 0 and y = y+1
+  end
+  if z = 59 and y = 60 then 
+    x = x+1 and z = 0 and y = 0
+  end
+  ab.Text = (x..":"..y..":"..z)
 end
-
-if z = 59 and y = 60 then 
-  x = x+1 and z = 0 and y = 0
-end
+  
   
   
