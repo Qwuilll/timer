@@ -45,27 +45,14 @@ ab.Font=Enum.Font.ArialBold
 ab.TextColor3=Color3.new(1,1,1)
 ab.TextSize=20
 ab.Text="00:00:00"
+local w = 0
+
 while wait(1) do
-z += 1
-if z == 60 then
-y += 1 and z == 0
-end
-if y == 59 and z == 60
-then x += 1 and y == 0 and z == 0
-end
-local hour = tostring(x)
-local min = tostring(y)
-local sec = tostring(z)
-if x < 10 then 
-hour = "0"..hour
-end
-if y < 10 then
-min = "0"..min
-end
-if z < 10 then
-sec = "0"..sec
-end
-ab.Text = hour..":"..min..":"..sec
+    w += 1
+    z = w % 60
+    y = math.floor(w / 60)
+    x = math.floor(y / 60)
+    ab.Text = string.format("%02d:%02d:%02d", x, y, z)
 end
 
 
