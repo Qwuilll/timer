@@ -44,7 +44,7 @@ ab.Size=UDim2.new(0,304,0,44)
 ab.Font=Enum.Font.ArialBold
 ab.TextColor3=Color3.new(1,1,1)
 ab.TextSize=20
-
+ab.Text="00:00:00"
 while wait(1) do
 z += 1
 if z == 60 then
@@ -65,7 +65,7 @@ end
 if z < 10 then
 sec = "0"..min
 end
-ab.Text = (hour..":"..min..":"..sec)
+ab.Text = hour..":"..min..":"..sec
 end
 
 
