@@ -25,10 +25,10 @@ local w = 0
 
 while wait(1) do
     w += 1
-    z = w
+    z = w % 60
     y = math.floor(w / 60) % 60
     x = math.floor(w / 3600)
-    ab.Text = string.format("%02d:%02d:%02d", x, y, z)
+    ca.Text = string.format("%02d:%02d:%02d", x, y, z)
 end
 
 
